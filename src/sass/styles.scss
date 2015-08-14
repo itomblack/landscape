@@ -1,0 +1,109 @@
+//===============================================================================
+// IMPORTS
+//===============================================================================
+// normalize.css v3.0.0 | MIT License | git.io/normalize
+@import "_normalize.scss";
+
+// define mixins & functions
+@import "_mixins.scss";
+
+// define variables
+@import "_variables.scss";
+
+
+
+//===============================================================================
+// BASICS
+//===============================================================================
+// box-sizing everywhere and webkit text rendering correction
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+// remove padding & list styles from all <ul> as default
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  // background-color: $paper;
+  background-image: linear-gradient( to bottom, 
+      $sky,
+      $sky 30%,
+      $sky-2 30%,
+      $sky-2 50%,
+      $sky-3 50%,
+      $sky-3 80%,
+      $land 80%,
+      $land
+    );
+  color: $ink;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+//===============================================================================
+// STYLES
+//===============================================================================
+
+svg {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+//===============================================================================
+// parallax
+//===============================================================================
+
+.parallax {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: auto;
+  perspective: 1px;
+}
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 
+}
+
+.parallax-layer-front {
+  transform: translateZ(-3px) scale(4);
+  svg {
+    min-width: 300%;
+    min-height: 100%;
+  }
+}
+.parallax-layer-middle {
+  transform: translateZ(-5px) scale(6);
+}
+.parallax-layer-back {
+  transform: translateZ(-20px) scale(21);
+}
+ .parallax-fixed {
+  height: 100vh;
+  width: 100vw;
+  position:fixed;
+  top: 0;
+  left: 0;
+
+  svg {
+    min-width: 300%;
+    min-height: 100%;
+  }
+ }
+
+
+
+
