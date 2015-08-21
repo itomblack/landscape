@@ -62,48 +62,16 @@ svg {
 // parallax
 //===============================================================================
 
-.parallax {
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
-  overflow-x: auto;
-  perspective: 1px;
-}
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-left: 
+.layer {
+  width: 100%;
+  height: 100%;
 }
 
-.parallax-layer-front {
-  transform: translateZ(-3px) scale(4);
-  svg {
-    min-width: 300%;
-    min-height: 100%;
-  }
+.scene {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05) !important;
 }
-.parallax-layer-middle {
-  transform: translateZ(-5px) scale(6);
-}
-.parallax-layer-back {
-  transform: translateZ(-20px) scale(21);
-}
- .parallax-fixed {
-  height: 100vh;
-  width: 100vw;
-  position:fixed;
-  top: 0;
-  left: 0;
-
-  svg {
-    min-width: 300%;
-    min-height: 100%;
-  }
- }
-
 
 
 

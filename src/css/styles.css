@@ -218,49 +218,14 @@ svg {
   min-height: 100%; }
 
 /* line 65, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-.parallax {
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
-  overflow-x: auto;
-  -webkit-perspective: 1px;
-  perspective: 1px; }
+.layer {
+  width: 100%;
+  height: 100%; }
 
-/* line 72, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-/* line 81, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-.parallax-layer-front {
-  -webkit-transform: translateZ(-3px) scale(4);
-  transform: translateZ(-3px) scale(4); }
-  /* line 83, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-  .parallax-layer-front svg {
-    min-width: 300%;
-    min-height: 100%; }
-
-/* line 88, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-.parallax-layer-middle {
-  -webkit-transform: translateZ(-5px) scale(6);
-  transform: translateZ(-5px) scale(6); }
-
-/* line 91, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-.parallax-layer-back {
-  -webkit-transform: translateZ(-20px) scale(21);
-  transform: translateZ(-20px) scale(21); }
-
-/* line 94, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-.parallax-fixed {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0; }
-  /* line 101, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
-  .parallax-fixed svg {
-    min-width: 300%;
-    min-height: 100%; }
+/* line 70, /Users/itomblack/Repos/landscape/src/sass/styles.scss */
+.scene {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.05) !important;
+  -ms-transform: scale(1.05) !important;
+  transform: scale(1.05) !important; }
